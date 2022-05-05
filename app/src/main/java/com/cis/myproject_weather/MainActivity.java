@@ -140,7 +140,15 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 .build();
         ApiInterface apiInterface = retrofit.create(ApiInterface.class);
 
-        Call<Weather_Parent> call = apiInterface.GetAllbyCoord(String.valueOf(lat), String.valueOf(lon), "metric", "f7c7798e4e1861f10a6c393a533d873c");
+
+
+
+
+
+
+        //////////=============================API Key must assign===========================//////////////////////
+
+        Call<Weather_Parent> call = apiInterface.GetAllbyCoord(String.valueOf(lat), String.valueOf(lon), "metric", "API Key");
         call.enqueue(new Callback<Weather_Parent>() {
 
             @Override

@@ -54,7 +54,9 @@ public class Hourley_Search_Weather extends AppCompatActivity {
                     .build();
             ApiInterface apiInterface = retrofit.create(ApiInterface.class);
 
-            Call<Root> call = apiInterface.GetAllbyName(input_city.getText().toString(), "metric", "f7c7798e4e1861f10a6c393a533d873c");
+            //////////=============================API Key must assign===========================//////////////////////
+
+            Call<Root> call = apiInterface.GetAllbyName(input_city.getText().toString(), "metric", "API Key");
 
             call.enqueue(new Callback<Root>() {
 

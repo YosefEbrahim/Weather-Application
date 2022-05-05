@@ -81,7 +81,11 @@ public class City_Id extends AppCompatActivity {
                     .build();
             ApiInterface apiInterface = retrofit.create(ApiInterface.class);
 
-            Call<Weather_Parent> call = apiInterface.GetById(input_city.getText().toString(), "metric", "f7c7798e4e1861f10a6c393a533d873c");
+
+
+
+            //////////=============================API Key must assign===========================//////////////////////
+            Call<Weather_Parent> call = apiInterface.GetById(input_city.getText().toString(), "metric", "API Key");
 
             call.enqueue(new Callback<Weather_Parent>() {
 

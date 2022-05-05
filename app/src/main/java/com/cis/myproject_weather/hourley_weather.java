@@ -130,7 +130,9 @@ public class hourley_weather extends AppCompatActivity implements LocationListen
                 .build();
         ApiInterface apiInterface = retrofit.create(ApiInterface.class);
 
-        Call<Root> call = apiInterface.GetAllbyCoordList(String.valueOf(lat), String.valueOf(lon), "metric", "f7c7798e4e1861f10a6c393a533d873c");
+
+        //////////=============================API Key must assign===========================//////////////////////
+        Call<Root> call = apiInterface.GetAllbyCoordList(String.valueOf(lat), String.valueOf(lon), "metric", "API Key");
         call.enqueue(new Callback<Root>() {
 
             @Override
