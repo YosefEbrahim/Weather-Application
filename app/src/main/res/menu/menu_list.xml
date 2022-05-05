@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/city_name" android:title="Search by City Name"></item>
+<item android:id="@+id/city_id" android:title="Search by City Id"></item>
+<item android:id="@+id/coordinate" android:title="Search by Coordinates"></item>
+<item android:id="@+id/weather_hour" android:title="Weather for 5 days every 3h"></item>
+<item android:id="@+id/weather_hour_search" android:title="Weather for 5 days every 3h by City Name"></item>
+</menu>
